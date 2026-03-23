@@ -4,7 +4,7 @@ Instagram.html
 Instagram1.html
 Instagram_files/
 Instagram1_files/
-*.facebook.jpg
-431627852_*.jpg
-518091348_*.jpg
 .claude/
+
+# Raw source photos (processed versions are in images/)
+[0-9]*_n.jpg

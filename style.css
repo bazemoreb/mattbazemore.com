@@ -417,7 +417,7 @@ strong {
 }
 
 .music-layout {
-  max-width: 680px;
+  max-width: 780px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -439,6 +439,111 @@ strong {
 
 .music-content strong {
   color: var(--cream);
+}
+
+.blacklight-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.blacklight-gallery .gallery-frame {
+  background: #000;
+}
+
+.blacklight-gallery figcaption {
+  color: rgba(242, 237, 228, 0.45);
+}
+
+.album-covers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.album-covers figure {
+  text-align: center;
+}
+
+.album-covers img {
+  width: 100%;
+  max-width: 280px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.album-covers figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: rgba(242, 237, 228, 0.5);
+}
+
+.video-links {
+  display: flex;
+  gap: 1.2rem;
+  margin: 1.2rem 0 0.5rem;
+  flex-wrap: wrap;
+}
+
+.video-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid rgba(242, 237, 228, 0.2);
+  color: var(--cream);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+}
+
+.video-links a:hover {
+  border-color: rgba(242, 237, 228, 0.5);
+  background: rgba(242, 237, 228, 0.08);
+}
+
+.video-links svg {
+  flex-shrink: 0;
+  color: #ff4444;
+}
+
+.music-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+}
+
+@media (max-width: 700px) {
+  .music-photos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.music-photos img {
+  width: 100%;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.music-photos figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: rgba(242, 237, 228, 0.45);
+}
+
+@media (max-width: 500px) {
+  .blacklight-gallery,
+  .album-covers,
+  .music-photos {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ── Connect ───────────────────────────────────────── */
